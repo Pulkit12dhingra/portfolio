@@ -115,6 +115,26 @@
         loop: true,
         items: 1
     });
-    
+
+
+    // Scroll progress bar
+    $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        var docHeight = $(document).height() - $(window).height();
+        var progress = (scrollTop / docHeight) * 100;
+        $('#scroll-progress').css('width', progress + '%');
+    });
+
+
+    // Custom cursor glow
+    $(document).on('mousemove', function (e) {
+        $('.cursor-glow').css({ left: e.clientX, top: e.clientY });
+    });
+    $('a, button, .btn').on('mouseenter', function () {
+        $('.cursor-glow').addClass('cursor-glow--active');
+    }).on('mouseleave', function () {
+        $('.cursor-glow').removeClass('cursor-glow--active');
+    });
+
 })(jQuery);
 

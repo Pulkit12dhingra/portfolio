@@ -34,6 +34,12 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
+    <!-- JetBrains Mono (monospace for code-like elements) -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
@@ -43,6 +49,10 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow"></div>
     <!-- chatbot -->
     <script>
         window.embeddedChatbotConfig = {
@@ -104,16 +114,17 @@
 
     <!-- Header Start -->
     <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
+        <div id="particles-js"></div>
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile_2.jpeg" alt="Pulkit Dhingra - Data Scientist and AI Engineer profile photo" loading="eager">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm profile-glow" src="img/profile_2.jpeg" alt="Pulkit Dhingra - Data Scientist and AI Engineer profile photo" loading="eager">
                 </div>
-                <div class="col-lg-7 text-center text-lg-left">
+                <div class="col-lg-7 text-center text-lg-left" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Pulkit Dhingra</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Software Engineer, AI Engineer, Data Scientist, DevOps</div>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white hero-mono"></h1>
+                    <div class="typed-text d-none">AI Engineer, Data Scientist, Software Engineer, DevOps Engineer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a target="_blank" href="resume/Pulkit_Resume.pdf" class="btn btn-outline-light mr-5">Download Resume</a>
                         <a target="_blank" href="https://pulkit12dhingra.github.io/Blog/index.html" class="btn btn-outline-light mr-5">Tech Blogs</a>
@@ -139,10 +150,10 @@
                 <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
+                <div class="col-lg-5 pb-4 pb-lg-0" data-aos="fade-right">
                     <img class="img-fluid rounded w-100" src="img/profile_4.jpeg" alt="Pulkit Dhingra working at desk with laptop" loading="lazy">
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
                     <h3 class="mb-4">Solving Problems with 0s and 1s</h3>
                     <p>Versatile technologist with expertise in Python, R and Java, complemented by hands-on experience in Terraform and cloud platforms
 (AWS, GCP, Azure). Skilled in designing and implementing scalable applications, dashboards and end-to-end pipelines, leveraging
@@ -176,7 +187,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                 <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right">
                     <h3 class="mb-4">My Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
@@ -206,7 +217,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
                     <h3 class="mb-4">My Expericence</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
@@ -249,7 +260,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                 <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">PYTHON</h6>
@@ -278,7 +289,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">Data Science</h6>
@@ -321,52 +332,81 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                 <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Automated-Document-Parser</h4>
                     </div>
                     <p>A powerful and automated document parser built with LangChain for intelligent document processing. Automatically detects file types and uses appropriate loaders for PDF, DOCX, CSV, JSON, HTML, and more.</p>
+                    <div class="tech-badges mb-3">
+                        <span class="tech-badge">LangChain</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">RAG</span>
+                    </div>
                     <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/automated-document-parser.git">Read More</a>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Query-Agent</h4>
                     </div>
                     <p>An intelligent SQL query automation system that converts natural language questions into SQL queries using LLM, RAG, and Python. Features CLI interface, comprehensive testing, and modular architecture.</p>
+                    <div class="tech-badges mb-3">
+                        <span class="tech-badge">LLM</span>
+                        <span class="tech-badge">RAG</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">Python</span>
+                    </div>
                     <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/Query_Agent.git">Read More</a>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Hindi-GPT-Neo-2.7B</h4>
                     </div>
                     <p>Fine Tuning LLM model using LoRA adaptor to understand Hindi language using custome data and encoders</p>
+                    <div class="tech-badges mb-3">
+                        <span class="tech-badge">LoRA</span>
+                        <span class="tech-badge">Fine-tuning</span>
+                        <span class="tech-badge">HuggingFace</span>
+                    </div>
                     <a class="border-bottom border-primary text-decoration-none" href="https://huggingface.co/DumbsterDrekk/hindi-gpt-neo-2.7B">Read More</a>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Dynamic Price Trend in e-commerece</h4>
                     </div>
                     <p>This project analyzes dynamic pricing trends in e-commerce using datasets from Kaggle and eBay. The analysis includes data cleaning, validation, and advanced analysis using Apache Spark.</p>
+                    <div class="tech-badges mb-3">
+                        <span class="tech-badge">Apache Spark</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Kaggle</span>
+                    </div>
                     <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/Price_Trends_in_e-Commerce.git">Read More</a>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">UK Demographics Viz</h4>
                     </div>
                     <p>Visualization about the demographics in the UK across various regions</p>
+                    <div class="tech-badges mb-3">
+                        <span class="tech-badge">Tableau</span>
+                        <span class="tech-badge">Data Viz</span>
+                    </div>
                     <a class="border-bottom border-primary text-decoration-none" href="https://public.tableau.com/app/profile/pulkit.dhingra/viz/UrbanizationintheUK/Dashboard">Read More</a>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Hitlog Processing</h4>
                     </div>
                     <p>A Python data pipeline that analyzes website hit logs to identify and rank the top 3 most influential articles leading users to registration events.</p>
+                    <div class="tech-badges mb-3">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Data Pipeline</span>
+                    </div>
                     <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/Hitlog_Processing.git">Read More</a>
                 </div>
             </div>
@@ -393,7 +433,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item first" data-aos="zoom-in" data-aos-delay="0">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/Kaggle.jpg" alt="Kaggle profile - Machine Learning competitions and datasets" loading="eager">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -403,7 +443,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item second">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item second" data-aos="zoom-in" data-aos-delay="100">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/tableau.jpg" alt="Tableau Public profile - Data visualization dashboards" loading="eager">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -413,7 +453,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item third">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item third" data-aos="zoom-in" data-aos-delay="200">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/Hackerrank.jpg" alt="HackerRank profile - Coding challenges and certifications" loading="eager">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -423,7 +463,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item first" data-aos="zoom-in" data-aos-delay="0">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/acclaim.jpg" alt="Credly badges and professional certifications" loading="eager">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -433,7 +473,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item second">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item second" data-aos="zoom-in" data-aos-delay="100">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/gfg.jpg" alt="GeeksforGeeks profile - Technical articles and contributions" loading="eager">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -443,7 +483,7 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item third">
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item third" data-aos="zoom-in" data-aos-delay="200">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/leetcode.png" alt="LeetCode profile - Algorithm and data structure problems" loading="eager">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -592,6 +632,35 @@ learning, exploring emerging technologies, and fostering a collaborative, high-i
     <!-- Set current year in footer -->
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- AOS - Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // AOS init
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 80 });
+
+        // Particles.js - neural network style
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 55, density: { enable: true, value_area: 900 } },
+                color: { value: '#ffffff' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.25, random: true, anim: { enable: true, speed: 0.8, opacity_min: 0.05, sync: false } },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 140, color: '#ffffff', opacity: 0.15, width: 1 },
+                move: { enable: true, speed: 1.5, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: false }, resize: true },
+                modes: { grab: { distance: 140, line_linked: { opacity: 0.4 } } }
+            },
+            retina_detect: true
+        });
     </script>
 
 </body>
