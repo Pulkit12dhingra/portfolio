@@ -126,6 +126,82 @@
     });
 
 
+    // Impact stat counters
+    var impactCounted = false;
+    $('.impact-section').waypoint(function () {
+        if (!impactCounted) {
+            impactCounted = true;
+            $('.impact-number').each(function () {
+                var $el = $(this);
+                var target = parseInt($el.data('target'), 10);
+                var duration = 1500;
+                var stepTime = Math.max(Math.floor(duration / target), 20);
+                var current = 0;
+                var timer = setInterval(function () {
+                    current += 1;
+                    $el.text(current);
+                    if (current >= target) {
+                        $el.text(target);
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            });
+        }
+    }, { offset: '80%' });
+
+    // Skill Radar Chart
+    $(window).on('load', function () {
+        var ctx = document.getElementById('skillRadar');
+        if (ctx) {
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Python', 'AI / LLM', 'Data Science', 'DevOps', 'Visualization', 'DBT / SQL'],
+                    datasets: [{
+                        label: 'Proficiency',
+                        data: [95, 95, 90, 80, 90, 85],
+                        backgroundColor: 'rgba(11, 206, 175, 0.15)',
+                        borderColor: '#0BCEAF',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#0BCEAF',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#FFD166',
+                        pointHoverBorderColor: '#FFD166',
+                        pointRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        r: {
+                            min: 0,
+                            max: 100,
+                            ticks: {
+                                stepSize: 25,
+                                color: '#aaa',
+                                font: { family: 'JetBrains Mono', size: 10 },
+                                backdropColor: 'transparent'
+                            },
+                            grid: { color: 'rgba(11, 206, 175, 0.15)' },
+                            angleLines: { color: 'rgba(11, 206, 175, 0.15)' },
+                            pointLabels: {
+                                color: '#343a40',
+                                font: { family: 'JetBrains Mono', size: 11, weight: '700' }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    animation: {
+                        duration: 1500,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+        }
+    });
+
     // Custom cursor glow
     $(document).on('mousemove', function (e) {
         $('.cursor-glow').css({ left: e.clientX, top: e.clientY });

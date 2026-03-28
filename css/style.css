@@ -10124,3 +10124,277 @@ h6,
     transform: scale(1.03);
 }
 
+
+/********** New Design System — AI Lab Theme ************/
+
+/* ---- Color variables ---- */
+:root {
+    --navy: #0D1B2A;
+    --amber: #FFD166;
+    --teal: #0BCEAF;
+    --navy-light: #162536;
+}
+
+/* ---- Alternating section backgrounds ---- */
+#qualification.container-fluid {
+    background: var(--navy);
+}
+#qualification h1, #qualification h3, #qualification h5,
+#qualification .font-weight-bold, #qualification strong,
+#qualification small {
+    color: #e0e6ed !important;
+}
+#qualification p { color: #a0b0c0; }
+#qualification .text-primary { color: var(--teal) !important; }
+#qualification .border-primary { border-color: var(--teal) !important; }
+#qualification .display-1 { color: var(--navy-light) !important; -webkit-text-stroke: 1px #1e3a54 !important; }
+
+#testimonial.container-fluid {
+    background: var(--navy);
+}
+#testimonial h1, #testimonial h4, #testimonial h5 { color: #e0e6ed !important; }
+#testimonial .display-1 { color: var(--navy-light) !important; -webkit-text-stroke: 1px #1e3a54 !important; }
+#testimonial .testimonial-carousel .owl-dot { background: #2a4a6a; }
+
+/* ---- Impact Stats Section ---- */
+.impact-section {
+    background: var(--navy);
+}
+.impact-stat {
+    padding: 20px;
+}
+.impact-number-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+}
+.impact-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--amber);
+    line-height: 1;
+}
+.impact-suffix {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--amber);
+}
+.impact-label {
+    font-size: 0.9rem;
+    color: #a0b0c0;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+}
+
+/* ---- JSON Panel (About section) ---- */
+.json-panel {
+    background: #0f1c2e;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(11, 206, 175, 0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+.json-panel-header {
+    background: #1a2d42;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.json-panel-filename {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #6a8a9a;
+    margin-left: 8px;
+}
+.json-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: #c8d8e8;
+    padding: 20px 24px;
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.json-key   { color: #79b8ff; }
+.json-string { color: #9ecbff; }
+.json-available { color: var(--teal) !important; font-weight: bold; }
+
+/* ---- Terminal Dots (shared) ---- */
+.terminal-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.dot-red    { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green  { background: #28c840; }
+
+/* ---- Terminal Header (project cards) ---- */
+.terminal-header {
+    background: #1a2d42;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -20px;
+}
+.terminal-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: #6a8a9a;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.project-card {
+    border-radius: 10px !important;
+    border: 1px solid #e8edf2;
+    overflow: hidden;
+}
+.project-card:hover {
+    border-color: rgba(11, 206, 175, 0.4) !important;
+}
+
+/* ---- Git Hash (timeline) ---- */
+.git-hash {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--teal);
+    background: rgba(11, 206, 175, 0.1);
+    border: 1px solid rgba(11, 206, 175, 0.25);
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-right: 6px;
+    vertical-align: middle;
+    letter-spacing: 0.05em;
+}
+
+/* ---- Timeline line draw animation ---- */
+.border-left.border-primary {
+    border-left-width: 2px !important;
+    position: relative;
+}
+.border-left.border-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 2px;
+    height: 0%;
+    background: var(--teal);
+    animation: drawLine 1.5s ease forwards;
+    animation-delay: 0.3s;
+}
+@keyframes drawLine {
+    to { height: 100%; }
+}
+
+/* ---- Portfolio Stats Overlay ---- */
+.portfolio-stats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(11, 206, 175, 0.95), rgba(11, 206, 175, 0.7));
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 8px;
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border-radius: 0 0 4px 4px;
+}
+.portfolio-stats p { margin: 0; }
+.portfolio-item:hover .portfolio-stats {
+    transform: translateY(0%);
+}
+
+/* ---- Radar Chart Container ---- */
+.radar-container {
+    background: #f8fffd;
+    border: 1px solid rgba(11, 206, 175, 0.2);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(11, 206, 175, 0.08);
+}
+
+/* ---- CLI Footer ---- */
+.cli-footer {
+    background: #0a1520;
+    border: 1px solid rgba(11, 206, 175, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.cli-footer-header {
+    background: #162536;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.cli-footer-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #6a8a9a;
+    margin-left: 10px;
+}
+.cli-links {
+    padding: 20px 24px 10px;
+}
+.cli-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cli-prompt {
+    color: var(--teal);
+    font-weight: 700;
+    user-select: none;
+}
+.cli-line a {
+    color: #9ecbff;
+    text-decoration: none;
+    transition: color 0.2s;
+    border-bottom: none !important;
+}
+.cli-line a:hover {
+    color: var(--teal);
+    text-decoration: none;
+}
+.cli-cursor-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    padding: 0 24px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cli-blink {
+    color: var(--teal);
+    animation: blink 1s step-end infinite;
+    font-weight: 700;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}

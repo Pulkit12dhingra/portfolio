@@ -1,668 +1,1704 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Security Headers -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPENZKYK3H"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPENZKYK3H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WPENZKYK3H');
+  </script>
 
-      gtag('config', 'G-WPENZKYK3H');
-    </script>
+  <meta charset="utf-8">
+  <title>Pulkit Dhingra — AI Engineer & Data Scientist | Ford Motor Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pulkit Dhingra — AI Engineer at Ford Motor Company building agentic AI, MLOps pipelines, and LLM systems. MSc Data Science with Distinction, University of Bristol. 3+ years experience in Python, GCP, Kubernetes, and LangChain.">
+  <meta name="keywords" content="Pulkit Dhingra, AI Engineer, Data Scientist, Agentic AI, MLOps, LLM, RAG Systems, Ford Motor Company, Bristol, Python, Kubernetes, Google ADK, LangChain">
+  <meta name="author" content="Pulkit Dhingra">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pulkit12dhingra.github.io/">
 
-    <meta charset="utf-8">
-    <title>Pulkit Dhingra - Data Scientist | AI Engineer | Software Developer</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Pulkit Dhingra, Data Scientist, AI Engineer, Machine Learning, Python, DevOps, Data Science, Bristol, Portfolio" name="keywords">
-    <meta content="Pulkit Dhingra - Data Scientist & AI Engineer with 2+ years experience in Python, Machine Learning, and DevOps. MSc Data Science student at University of Bristol. Specialized in building scalable AI applications and data pipelines." name="description">
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pulkit12dhingra.github.io/">
+  <meta property="og:title" content="Pulkit Dhingra — AI Engineer & Data Scientist">
+  <meta property="og:description" content="AI Engineer at Ford Motor Company building agentic AI, MLOps pipelines, and LLM systems. MSc Data Science (Distinction), University of Bristol.">
+  <meta property="og:image" content="https://pulkit12dhingra.github.io/img/profile_2.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Pulkit Dhingra Portfolio">
+  <meta property="og:locale" content="en_GB">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pulkit Dhingra — AI Engineer & Data Scientist">
+  <meta name="twitter:description" content="AI Engineer at Ford Motor Company. Agentic AI · MLOps · LLM Systems · 3+ Years experience.">
+  <meta name="twitter:image" content="https://pulkit12dhingra.github.io/img/profile_2.jpeg">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <!-- Theme / PWA -->
+  <meta name="theme-color" content="#080D14">
+  <meta name="color-scheme" content="dark">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Structured Data — Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pulkit Dhingra",
+    "jobTitle": "AI Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ford Motor Company"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Bristol"
+    },
+    "url": "https://pulkit12dhingra.github.io/",
+    "image": "https://pulkit12dhingra.github.io/img/profile_2.jpeg",
+    "email": "pulkit12dhingra@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/pulkit-dhingra-4b7312193/",
+      "https://github.com/Pulkit12dhingra",
+      "https://www.kaggle.com/pulkit12dhingra",
+      "https://huggingface.co/DumbsterDrekk"
+    ],
+    "knowsAbout": ["Agentic AI", "MLOps", "LLM Fine-tuning", "RAG Systems", "Python", "Kubernetes", "Google ADK"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bristol",
+      "addressCountry": "GB"
+    }
+  }
+  </script>
 
-    <!-- JetBrains Mono (monospace for code-like elements) -->
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="img/favicon-pd.svg" rel="icon" type="image/svg+xml">
+  <link href="img/favicon-pd.svg" rel="shortcut icon">
+  <link href="img/favicon-pd.svg" rel="apple-touch-icon">
 
-    <!-- AOS - Animate On Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- Chatbase -->
+  <script>
+    window.embeddedChatbotConfig = { chatbotId: "leBHjiEgyzSQsQGqVnFFK", domain: "www.chatbase.co" }
+  </script>
+  <script src="https://www.chatbase.co/embed.min.js" chatbotId="leBHjiEgyzSQsQGqVnFFK" domain="www.chatbase.co" defer></script>
+
+  <style>
+    /* ─── Tokens ─── */
+    :root {
+      --bg:      #080D14;
+      --bg2:     #0D1421;
+      --bg3:     #111A2E;
+      --cyan:    #22D3EE;
+      --blue:    #3B82F6;
+      --purple:  #8B5CF6;
+      --green:   #10B981;
+      --amber:   #F59E0B;
+      --text1:   #F8FAFC;
+      --text2:   #94A3B8;
+      --text3:   #475569;
+      --border:  rgba(34,211,238,0.15);
+      --glass:   rgba(13,20,33,0.7);
+    }
+
+    /* ─── Reset ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text2);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: var(--cyan); text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ─── Scroll Progress ─── */
+    #scroll-progress {
+      position: fixed; top: 0; left: 0; height: 2px; width: 0%;
+      background: linear-gradient(90deg, var(--cyan), var(--blue));
+      z-index: 9999; transition: width 0.1s linear;
+    }
+
+    /* ─── Nav ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 2.5rem;
+      transition: background 0.3s, backdrop-filter 0.3s;
+    }
+    nav.scrolled {
+      background: rgba(8,13,20,0.92);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700; font-size: 1.4rem;
+      background: linear-gradient(135deg, var(--cyan), var(--blue));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--text2); font-weight: 500; font-size: 0.9rem;
+      position: relative; transition: color 0.2s;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px;
+      background: var(--cyan); transition: width 0.25s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
+    .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
+    .status-pill {
+      display: flex; align-items: center; gap: 0.45rem;
+      background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.3);
+      color: var(--green); font-size: 0.75rem; font-weight: 600;
+      padding: 0.3rem 0.85rem; border-radius: 999px; white-space: nowrap;
+    }
+    .status-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+      animation: statusPulse 2s ease-in-out infinite;
+    }
+    .btn-hire {
+      border: 1px solid var(--cyan); color: var(--cyan);
+      padding: 0.4rem 1.1rem; border-radius: 6px; font-size: 0.85rem;
+      font-weight: 600; transition: background 0.2s, color 0.2s;
+    }
+    .btn-hire:hover { background: var(--cyan); color: var(--bg); }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .nav-toggle span {
+      width: 24px; height: 2px; background: var(--text1);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-drawer {
+      display: none; position: fixed; top: 65px; left: 0; right: 0;
+      background: rgba(8,13,20,0.97); backdrop-filter: blur(20px);
+      padding: 1.5rem 2rem 2rem; z-index: 999; border-bottom: 1px solid var(--border);
+    }
+    .nav-drawer.open { display: flex; flex-direction: column; gap: 1rem; }
+    .nav-drawer a { color: var(--text2); font-size: 1rem; padding: 0.5rem 0; }
+
+    /* ─── Hero ─── */
+    #home {
+      min-height: 100vh; display: flex; align-items: center;
+      position: relative; overflow: hidden; padding-top: 80px;
+    }
+    #neural-canvas {
+      position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0;
+    }
+    .blob {
+      position: absolute; border-radius: 50%;
+      filter: blur(90px); opacity: 0.18; z-index: 0;
+      animation: blobFloat 9s ease-in-out infinite;
+    }
+    .blob1 { width: 500px; height: 500px; background: var(--cyan); top: -80px; left: -120px; animation-delay: 0s; }
+    .blob2 { width: 400px; height: 400px; background: var(--purple); top: 40%; right: -80px; animation-delay: 3s; }
+    .blob3 { width: 350px; height: 350px; background: var(--blue); bottom: -60px; left: 40%; animation-delay: 6s; }
+    .hero-grid {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 3rem; align-items: center;
+      max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+      width: 100%;
+    }
+    .hero-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan); font-size: 0.85rem; font-weight: 500;
+      margin-bottom: 1rem; letter-spacing: 0.05em;
+    }
+    .hero-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 700; line-height: 1.05;
+      background: linear-gradient(135deg, var(--text1) 60%, var(--text3));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; margin-bottom: 1rem;
+    }
+    .hero-typed {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text2); font-size: 1.1rem; min-height: 1.8rem;
+      margin-bottom: 1.25rem;
+    }
+    .hero-typed .cursor { color: var(--cyan); animation: blink 1s step-end infinite; }
+    .hero-bio { color: var(--text2); font-size: 1rem; max-width: 480px; margin-bottom: 2rem; line-height: 1.8; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .btn-primary-grad {
+      background: linear-gradient(135deg, var(--cyan), var(--blue));
+      color: var(--bg); font-weight: 700; padding: 0.7rem 1.6rem;
+      border-radius: 8px; font-size: 0.9rem; transition: opacity 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .btn-primary-grad:hover { opacity: 0.88; transform: translateY(-2px); color: var(--bg); }
+    .btn-ghost {
+      border: 1px solid var(--cyan); color: var(--cyan);
+      padding: 0.7rem 1.6rem; border-radius: 8px; font-size: 0.9rem;
+      font-weight: 600; transition: background 0.2s, color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .btn-ghost:hover { background: rgba(34,211,238,0.1); transform: translateY(-2px); }
+    .hero-socials { display: flex; gap: 0.7rem; margin-bottom: 2rem; }
+    .social-btn {
+      width: 38px; height: 38px; border-radius: 50%;
+      border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+      color: var(--text2); font-size: 0.95rem; transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .social-btn:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-3px); }
+    .hero-stats { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .stat-pill {
+      background: rgba(13,20,33,0.8); border: 1px solid var(--border);
+      color: var(--text2); font-size: 0.78rem; font-weight: 500;
+      padding: 0.3rem 0.8rem; border-radius: 999px;
+      display: flex; align-items: center; gap: 0.35rem;
+    }
+    .hero-image-wrap {
+      position: relative; display: flex; align-items: center; justify-content: center;
+    }
+    .ring-wrap {
+      position: relative; width: 320px; height: 320px;
+    }
+    .ring-outer {
+      position: absolute; inset: -4px; border-radius: 50%;
+      background: conic-gradient(var(--cyan), var(--blue), var(--purple), var(--cyan));
+      animation: spinRing 7s linear infinite;
+    }
+    .ring-inner {
+      position: absolute; inset: 4px; border-radius: 50%;
+      background: var(--bg); overflow: hidden;
+    }
+    .ring-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+    .hero-badge {
+      position: absolute;
+      background: var(--glass); backdrop-filter: blur(16px);
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 0.6rem 1rem; font-size: 0.78rem; font-weight: 600;
+      color: var(--text1); white-space: nowrap;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .badge-top { top: 10px; right: -30px; animation: floatA 3s ease-in-out infinite; }
+    .badge-bot { bottom: 20px; left: -30px; animation: floatB 3s ease-in-out infinite; }
+    .badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+    .scroll-indicator {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      color: var(--text3); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; z-index: 1;
+    }
+    .scroll-line { width: 1px; height: 40px; background: var(--cyan); animation: scrollPulse 2s ease-in-out infinite; }
+
+    /* ─── Section common ─── */
+    section { padding: 5rem 0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section-header { margin-bottom: 3.5rem; }
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan); font-size: 0.8rem; letter-spacing: 0.08em;
+      display: block; margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700;
+      color: var(--text1); line-height: 1.2;
+    }
+
+    /* ─── About ─── */
+    #about .about-grid {
+      display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center;
+    }
+    .about-img-wrap { position: relative; border-radius: 16px; overflow: hidden; }
+    .about-img-wrap img { width: 100%; border-radius: 16px; }
+    .about-img-wrap::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(8,13,20,0.6), transparent 50%);
+    }
+    .about-bio { color: var(--text2); margin-bottom: 1.8rem; line-height: 1.9; }
+    .json-panel {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden; margin-bottom: 1.8rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .json-header {
+      background: var(--bg3); padding: 0.6rem 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .tdot { width: 10px; height: 10px; border-radius: 50%; }
+    .tdot-r { background: #EF4444; }
+    .tdot-y { background: #F59E0B; }
+    .tdot-g { background: #10B981; }
+    .json-fname { color: var(--text3); font-size: 0.75rem; margin-left: 0.5rem; }
+    .json-body { padding: 1.2rem 1.4rem; font-size: 0.82rem; line-height: 1.9; }
+    .jk { color: var(--cyan); }
+    .js { color: var(--amber); }
+    .jav { color: var(--green); }
+    .about-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .mag-btn { transition: transform 0.15s; }
+
+    /* ─── Impact Stats ─── */
+    #impact { background: var(--bg2); }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+    }
+    .stat-card {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem 1.5rem;
+      border-top: 2px solid transparent;
+      border-image: linear-gradient(90deg, var(--cyan), var(--blue)) 1;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .stat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--cyan), var(--blue));
+    }
+    .stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem; font-weight: 700; color: var(--cyan);
+      display: flex; align-items: baseline; justify-content: center; gap: 2px;
+    }
+    .stat-suf { font-size: 1.8rem; color: var(--blue); }
+    .stat-label { color: var(--text2); font-size: 0.85rem; margin-top: 0.4rem; }
+
+    /* ─── Experience / Education ─── */
+    .tab-pills { display: flex; gap: 0.5rem; margin-bottom: 2.5rem; }
+    .tab-pill {
+      padding: 0.5rem 1.4rem; border-radius: 999px;
+      border: 1px solid var(--border); color: var(--text2);
+      font-weight: 600; font-size: 0.85rem; cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s; background: transparent;
+    }
+    .tab-pill.active {
+      background: var(--cyan); color: var(--bg); border-color: var(--cyan);
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .timeline { position: relative; padding-left: 2rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(to bottom, var(--cyan), transparent);
+    }
+    .tl-item { position: relative; margin-bottom: 2.5rem; }
+    .tl-dot {
+      position: absolute; left: -2.42rem; top: 4px;
+      width: 14px; height: 14px; border-radius: 50%;
+      border: 2px solid var(--cyan); background: var(--bg);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .tl-item:hover .tl-dot { background: var(--cyan); box-shadow: 0 0 10px var(--cyan); }
+    .tl-period {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text3); font-size: 0.75rem; margin-bottom: 0.3rem;
+    }
+    .tl-title-row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.25rem; }
+    .tl-role {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--text1); font-weight: 700; font-size: 1.05rem;
+    }
+    .git-hash {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--purple); font-size: 0.72rem;
+      background: rgba(139,92,246,0.12); padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+    }
+    .tl-company { color: var(--cyan); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.6rem; }
+    .tl-desc { color: var(--text2); font-size: 0.9rem; line-height: 1.8; margin-bottom: 0.8rem; }
+    .tl-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tl-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 4px;
+      background: rgba(34,211,238,0.08); border: 1px solid rgba(34,211,238,0.2);
+      color: var(--cyan);
+    }
+    .impact-callout {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3);
+      color: var(--amber); font-size: 0.75rem; font-weight: 700;
+      padding: 0.2rem 0.6rem; border-radius: 4px; margin-left: 0.5rem;
+    }
+
+    /* ─── Skills ─── */
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .skill-category { margin-bottom: 1.8rem; }
+    .skill-cat-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem; color: var(--text3);
+      text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.7rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-tag {
+      font-size: 0.8rem; font-weight: 500;
+      padding: 0.3rem 0.85rem; border-radius: 6px;
+      opacity: 0; transform: scale(0.8);
+      transition: transform 0.25s, box-shadow 0.2s;
+    }
+    .skill-tag.in-view { opacity: 1; transform: scale(1); }
+    .skill-tag:hover { transform: scale(1.1); }
+    .tag-cyan  { background: rgba(34,211,238,0.1);  border: 1px solid rgba(34,211,238,0.25);  color: var(--cyan); }
+    .tag-blue  { background: rgba(59,130,246,0.1);  border: 1px solid rgba(59,130,246,0.25);  color: var(--blue); }
+    .tag-purple{ background: rgba(139,92,246,0.1);  border: 1px solid rgba(139,92,246,0.25);  color: var(--purple); }
+    .tag-green { background: rgba(16,185,129,0.1);  border: 1px solid rgba(16,185,129,0.25);  color: var(--green); }
+    .tag-amber { background: rgba(245,158,11,0.1);  border: 1px solid rgba(245,158,11,0.25);  color: var(--amber); }
+    .radar-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem;
+    }
+    .radar-card canvas { width: 100% !important; }
+
+    /* ─── Projects ─── */
+    .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .filter-btn {
+      padding: 0.4rem 1.1rem; border-radius: 999px; font-size: 0.82rem; font-weight: 600;
+      border: 1px solid var(--border); color: var(--text2); cursor: pointer;
+      background: transparent; transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      border-color: var(--cyan); color: var(--cyan); background: rgba(34,211,238,0.08);
+    }
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+    .proj-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 16px; overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+      position: relative; cursor: default;
+    }
+    .proj-card::before {
+      content: ''; position: absolute; inset: 0; border-radius: 16px;
+      background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(34,211,238,0.05), transparent 60%);
+      opacity: 0; transition: opacity 0.3s; pointer-events: none;
+    }
+    .proj-card:hover::before { opacity: 1; }
+    .proj-card:hover { transform: translateY(-7px) scale(1.01); border-color: rgba(34,211,238,0.4); box-shadow: 0 8px 32px rgba(34,211,238,0.1); }
+    .proj-card.span2 { grid-column: span 2; }
+    .proj-card.hidden { display: none; }
+    .proj-header {
+      background: var(--bg3); padding: 0.7rem 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .proj-path { font-family: 'JetBrains Mono', monospace; color: var(--text3); font-size: 0.72rem; }
+    .proj-body { padding: 1.2rem 1.4rem; }
+    .proj-cat {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--purple); font-size: 0.7rem; text-transform: uppercase;
+      letter-spacing: 0.08em; margin-bottom: 0.5rem;
+    }
+    .proj-title {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--text1); font-size: 1rem; font-weight: 600; margin-bottom: 0.6rem;
+    }
+    .proj-desc { color: var(--text2); font-size: 0.85rem; line-height: 1.7; margin-bottom: 1rem; }
+    .proj-badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+    .proj-badge {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.68rem;
+      padding: 0.15rem 0.5rem; border-radius: 4px;
+      background: rgba(34,211,238,0.08); border: 1px solid rgba(34,211,238,0.18); color: var(--cyan);
+    }
+    .proj-links { display: flex; gap: 0.8rem; }
+    .proj-link {
+      display: flex; align-items: center; gap: 0.3rem;
+      color: var(--text2); font-size: 0.8rem; transition: color 0.2s;
+    }
+    .proj-link:hover { color: var(--cyan); }
+
+    /* ─── Profiles ─── */
+    .profiles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .profile-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.6rem 1.4rem;
+      position: relative; overflow: hidden;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .profile-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .pc-kaggle::before  { background: linear-gradient(90deg, var(--cyan), var(--blue)); }
+    .pc-tableau::before { background: linear-gradient(90deg, #E07B39, #F59E0B); }
+    .pc-hrank::before   { background: linear-gradient(90deg, var(--green), #34D399); }
+    .pc-credly::before  { background: linear-gradient(90deg, #EF4444, #F97316); }
+    .pc-gfg::before     { background: linear-gradient(90deg, var(--green), var(--cyan)); }
+    .pc-leetcode::before{ background: linear-gradient(90deg, var(--amber), #F97316); }
+    .profile-card:hover { transform: translateY(-6px); border-color: rgba(34,211,238,0.3); box-shadow: 0 6px 24px rgba(34,211,238,0.08); }
+    .profile-card:hover .profile-arrow { transform: translate(4px, -4px); }
+    .profile-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+    .profile-name { font-family: 'Space Grotesk', sans-serif; color: var(--text1); font-weight: 600; margin-bottom: 0.4rem; }
+    .profile-desc { color: var(--text2); font-size: 0.82rem; }
+    .profile-arrow { color: var(--text3); position: absolute; top: 1.2rem; right: 1.2rem; transition: transform 0.2s; }
+
+    /* ─── Research ─── */
+    .research-list { display: flex; flex-direction: column; gap: 1.2rem; }
+    .paper-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.8rem 2rem;
+      transition: transform 0.3s, border-color 0.3s;
+      display: grid; grid-template-columns: auto 1fr auto; gap: 1.5rem; align-items: start;
+    }
+    .paper-card:hover { transform: translateX(5px); border-color: rgba(34,211,238,0.35); }
+    .paper-num {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan); font-size: 1.8rem; font-weight: 700; line-height: 1;
+    }
+    .paper-year { font-size: 0.75rem; color: var(--text3); }
+    .paper-title { font-family: 'Space Grotesk', sans-serif; color: var(--text1); font-weight: 600; font-size: 1rem; margin-bottom: 0.3rem; }
+    .paper-journal { color: var(--text3); font-style: italic; font-size: 0.82rem; margin-bottom: 0.7rem; }
+    .paper-abstract { color: var(--text2); font-size: 0.85rem; line-height: 1.7; margin-bottom: 0.9rem; }
+    .paper-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .paper-tag {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.68rem;
+      padding: 0.15rem 0.5rem; border-radius: 4px;
+      background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.2); color: var(--purple);
+    }
+    .btn-read {
+      border: 1px solid var(--cyan); color: var(--cyan);
+      padding: 0.5rem 1.1rem; border-radius: 6px; font-size: 0.8rem;
+      font-weight: 600; white-space: nowrap;
+      transition: background 0.2s, color 0.2s; align-self: start;
+      display: inline-block;
+    }
+    .btn-read:hover { background: var(--cyan); color: var(--bg); }
+
+    /* ─── Testimonials ─── */
+    #testimonials { background: var(--bg2); }
+    .carousel-wrap { position: relative; overflow: hidden; }
+    .carousel-track { display: flex; transition: transform 0.5s ease; }
+    .carousel-slide {
+      min-width: 100%; padding: 0 4rem;
+    }
+    .testimonial-card {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: 20px; padding: 3rem 2.5rem; text-align: center;
+      max-width: 700px; margin: 0 auto;
+    }
+    .quote-mark {
+      font-size: 5rem; line-height: 1;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; font-family: Georgia, serif;
+      margin-bottom: 1rem; display: block;
+    }
+    .testimonial-text { color: var(--text1); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem; font-style: italic; }
+    .testimonial-person { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+    .testimonial-person img { width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--cyan); object-fit: cover; }
+    .testimonial-name { font-family: 'Space Grotesk', sans-serif; color: var(--text1); font-weight: 600; }
+    .testimonial-link { color: var(--cyan); font-size: 0.8rem; }
+    .carousel-controls { display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 2rem; }
+    .carousel-btn {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 1px solid var(--border); background: transparent; color: var(--text2);
+      cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; justify-content: center;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .carousel-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+    .carousel-dots { display: flex; gap: 0.5rem; }
+    .cdot {
+      width: 8px; height: 8px; border-radius: 999px; background: var(--text3);
+      transition: width 0.3s, background 0.3s; cursor: pointer;
+    }
+    .cdot.active { width: 24px; background: var(--cyan); }
+
+    /* ─── Footer ─── */
+    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 5rem 0 3rem; }
+    .footer-headline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700;
+      background: linear-gradient(135deg, var(--cyan), var(--blue));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; text-align: center; margin-bottom: 0.7rem;
+    }
+    .footer-sub { text-align: center; color: var(--text2); margin-bottom: 3rem; }
+    .cli-panel {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden; max-width: 560px; margin: 0 auto 2rem;
+    }
+    .cli-head {
+      background: var(--bg3); padding: 0.6rem 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .cli-title-text { font-family: 'JetBrains Mono', monospace; color: var(--text3); font-size: 0.72rem; margin-left: 0.5rem; }
+    .cli-body { padding: 1rem 1.4rem; }
+    .cli-row {
+      display: flex; align-items: center; gap: 0.6rem;
+      padding: 0.4rem 0.6rem; border-radius: 6px;
+      transition: background 0.2s, transform 0.2s; margin-bottom: 0.2rem;
+    }
+    .cli-row:hover { background: rgba(34,211,238,0.06); transform: translateX(5px); border-left: 1px solid var(--cyan); }
+    .cli-prompt { color: var(--cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; }
+    .cli-row a { color: var(--text2); font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; }
+    .cli-row a:hover { color: var(--cyan); }
+    .cli-cursor { font-family: 'JetBrains Mono', monospace; color: var(--cyan); animation: blink 1s step-end infinite; }
+    .footer-copy { text-align: center; color: var(--text3); font-size: 0.8rem; }
+
+    /* ─── Scroll reveal ─── */
+    .reveal       { opacity:0; transform:translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left  { opacity:0; transform:translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right { opacity:0; transform:translateX(40px);  transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-scale { opacity:0; transform:scale(0.92);       transition: opacity 0.7s ease, transform 0.7s ease; }
+    .in-view      { opacity:1 !important; transform:none !important; }
+    .d1 { transition-delay: 0.08s; }
+    .d2 { transition-delay: 0.16s; }
+    .d3 { transition-delay: 0.24s; }
+    .d4 { transition-delay: 0.32s; }
+    .d5 { transition-delay: 0.40s; }
+    .d6 { transition-delay: 0.48s; }
+
+    /* ─── Animations ─── */
+    @keyframes spinRing   { to { transform: rotate(360deg); } }
+    @keyframes blobFloat  { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+    @keyframes floatA     { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    @keyframes floatB     { 0%,100% { transform: translateY(-8px); } 50% { transform: translateY(0); } }
+    @keyframes statusPulse { 0%,100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); } 50% { box-shadow: 0 0 0 6px rgba(16,185,129,0); } }
+    @keyframes blink      { 0%,100% { opacity:1; } 50% { opacity:0; } }
+    @keyframes scrollPulse{ 0%,100% { opacity:0.3; transform:scaleY(1); } 50% { opacity:1; transform:scaleY(1.15); } }
+
+    /* ─── Responsive ─── */
+    /* ── Tablet (≤900px) ── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.2rem; }
+      .nav-links, .nav-right { display: none; }
+      .nav-toggle { display: flex; }
+
+      section { padding: 3.5rem 0; }
+      .container { padding: 0 1.2rem; }
+
+      .hero-grid { grid-template-columns: 1fr; text-align: center; padding: 0 1.2rem; }
+      .hero-image-wrap { display: none; }
+      .hero-ctas, .hero-socials, .hero-stats { justify-content: center; }
+      .hero-bio { margin-left: auto; margin-right: auto; }
+
+      #about .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .about-img-wrap { max-height: 300px; overflow: hidden; }
+
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .tab-pills { flex-wrap: wrap; }
+      .timeline { padding-left: 1.5rem; }
+      .tl-dot { left: -1.92rem; }
+
+      .skills-grid { grid-template-columns: 1fr; gap: 2rem; }
+
+      .bento-grid { grid-template-columns: 1fr; }
+      .proj-card.span2 { grid-column: span 1; }
+
+      .profiles-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .paper-card { grid-template-columns: 1fr; gap: 1rem; }
+      .paper-num { font-size: 1.2rem; }
+      .btn-read { align-self: auto; width: fit-content; }
+
+      .carousel-slide { padding: 0 0.5rem; }
+      .testimonial-card { padding: 2rem 1.5rem; }
+    }
+
+    /* ── Phone (≤560px) ── */
+    @media (max-width: 560px) {
+      section { padding: 2.8rem 0; }
+      .container { padding: 0 1rem; }
+
+      .hero-eyebrow { font-size: 0.75rem; }
+      .hero-typed { font-size: 0.95rem; }
+      .hero-bio { font-size: 0.9rem; }
+      .hero-ctas { flex-direction: column; align-items: center; gap: 0.75rem; }
+      .btn-primary-grad, .btn-ghost { width: 100%; text-align: center; padding: 0.75rem 1rem; }
+
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+      .stat-card { padding: 1.4rem 1rem; }
+      .stat-num { font-size: 2.2rem; }
+      .stat-suf { font-size: 1.3rem; }
+
+      .tl-title-row { flex-wrap: wrap; gap: 0.4rem; }
+      .tl-period { font-size: 0.7rem; }
+      .tl-desc { font-size: 0.85rem; }
+
+      .filter-bar { gap: 0.4rem; }
+      .filter-btn { font-size: 0.75rem; padding: 0.3rem 0.8rem; }
+
+      .proj-header { padding: 0.5rem 0.8rem; }
+      .proj-path { font-size: 0.65rem; }
+      .proj-body { padding: 1rem; }
+      .proj-title { font-size: 0.95rem; }
+      .proj-desc { font-size: 0.82rem; }
+
+      .profiles-grid { grid-template-columns: 1fr; }
+
+      .paper-card { padding: 1.2rem; }
+
+      .carousel-slide { padding: 0; }
+      .testimonial-card { padding: 1.8rem 1.2rem; border-radius: 14px; }
+      .testimonial-text { font-size: 0.92rem; }
+      .quote-mark { font-size: 3.5rem; }
+
+      .footer-headline { font-size: clamp(1.6rem, 8vw, 2.5rem); }
+      .cli-body { padding: 0.8rem 1rem; }
+      .cli-row a { font-size: 0.75rem; }
+
+      .section-title { font-size: clamp(1.5rem, 6vw, 2rem); }
+      .json-body { font-size: 0.75rem; padding: 1rem; overflow-x: auto; }
+
+      .about-btns { flex-direction: column; gap: 0.75rem; }
+      .about-btns .btn-primary-grad,
+      .about-btns .btn-ghost { width: 100%; text-align: center; }
+
+      .scroll-indicator { display: none; }
+    }
+
+    /* ── Very small (≤380px) ── */
+    @media (max-width: 380px) {
+      .stats-grid { grid-template-columns: 1fr; }
+      .hero-stats { flex-direction: column; align-items: center; }
+      .tl-tags { gap: 0.3rem; }
+      .tl-tag { font-size: 0.65rem; }
+    }
+  </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Scroll Progress Bar -->
-    <div id="scroll-progress"></div>
-    <!-- Custom Cursor Glow -->
-    <div class="cursor-glow"></div>
-    <!-- chatbot -->
-    <script>
-        window.embeddedChatbotConfig = {
-            chatbotId: "leBHjiEgyzSQsQGqVnFFK",
-            domain: "www.chatbase.co"
-        }
-    </script>
-    <script
-        src="https://www.chatbase.co/embed.min.js"
-        chatbotId="leBHjiEgyzSQsQGqVnFFK"
-        domain="www.chatbase.co"
-        defer>
-    </script>
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Pulkit</span>Dhingra</h1>
+<body>
+  <div id="scroll-progress"></div>
+
+  <!-- ── Nav ── -->
+  <nav id="navbar">
+    <span class="nav-logo">PD</span>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#profiles">Profiles</a></li>
+      <li><a href="#research">Research</a></li>
+    </ul>
+    <div class="nav-right" id="nav-right">
+      <span class="status-pill"><span class="status-dot"></span>Open to Work</span>
+      <a href="mailto:pulkit12dhingra@gmail.com" class="btn-hire">Hire Me</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-drawer" id="nav-drawer">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#research">Research</a>
+    <a href="mailto:pulkit12dhingra@gmail.com" class="btn-hire" style="align-self:start;margin-top:0.5rem;">Hire Me</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section id="home">
+    <canvas id="neural-canvas"></canvas>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="hero-grid">
+      <div>
+        <p class="hero-eyebrow">// AI Engineer &amp; Data Scientist</p>
+        <h1 class="hero-name">Pulkit<br>Dhingra</h1>
+        <div class="hero-typed"><span id="typed-output"></span><span class="cursor">▌</span></div>
+        <p class="hero-bio">Building production-grade agentic AI systems at Ford Motor Company. MSc Data Science (Distinction), University of Bristol. Specialised in LLMs, MLOps, and real-world AI deployments.</p>
+        <div class="hero-ctas">
+          <a href="resume/Pulkit_Resume.pdf" target="_blank" class="btn-primary-grad">Download Resume</a>
+          <a href="https://pulkit12dhingra.github.io/Blog/index.html" target="_blank" class="btn-ghost">Tech Blogs</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Pulkit12dhingra" target="_blank" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/pulkit-dhingra-4b7312193/" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://huggingface.co/DumbsterDrekk" target="_blank" class="social-btn" aria-label="HuggingFace"><i class="fas fa-robot"></i></a>
+          <a href="https://www.kaggle.com/pulkit12dhingra" target="_blank" class="social-btn" aria-label="Kaggle"><i class="fas fa-chart-bar"></i></a>
+          <a href="mailto:pulkit12dhingra@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="hero-stats">
+          <span class="stat-pill"><i class="fas fa-cog"></i> Ford Motor Company</span>
+          <span class="stat-pill"><i class="fas fa-graduation-cap"></i> MSc Bristol</span>
+          <span class="stat-pill"><i class="fas fa-building"></i> 3+ Years</span>
+          <span class="stat-pill"><i class="fas fa-map-marker-alt"></i> Bristol, UK</span>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="ring-wrap">
+          <div class="ring-outer"></div>
+          <div class="ring-inner"><img src="img/profile_2.jpeg" alt="Pulkit Dhingra" loading="eager"></div>
+        </div>
+        <div class="hero-badge badge-top">
+          <span class="badge-dot"></span> AI Engineer @ Ford
+        </div>
+        <div class="hero-badge badge-bot">
+          <i class="fas fa-graduation-cap" style="color:var(--cyan);font-size:0.8rem;"></i> MSc Data Science, Bristol
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">// 01 — About Me</span>
+        <h2 class="section-title">Solving Problems with 0s and 1s</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal-left">
+          <img src="img/profile_4.jpeg" alt="Pulkit Dhingra at desk" loading="lazy">
+        </div>
+        <div class="reveal-right">
+          <p class="about-bio">Versatile technologist with expertise in Python, R, and Java, complemented by hands-on experience with Terraform and cloud platforms (AWS, GCP, Azure). Skilled in designing scalable agentic AI applications, data pipelines, and end-to-end MLOps systems. Currently building production AI at Ford Motor Company and holding an MSc Data Science with Distinction from the University of Bristol.</p>
+          <div class="json-panel">
+            <div class="json-header">
+              <span class="tdot tdot-r"></span>
+              <span class="tdot tdot-y"></span>
+              <span class="tdot tdot-g"></span>
+              <span class="json-fname">profile.json</span>
+            </div>
+            <div class="json-body" id="json-typein">
+{
+  <span class="jk">"name"</span>: <span class="js">"Pulkit Dhingra"</span>,
+  <span class="jk">"role"</span>: <span class="js">"AI Engineer"</span>,
+  <span class="jk">"location"</span>: <span class="js">"Bristol, UK"</span>,
+  <span class="jk">"experience"</span>: <span class="js">"3+ Years"</span>,
+  <span class="jk">"degree"</span>: <span class="js">"MSc Data Science, Bristol"</span>,
+  <span class="jk">"status"</span>: <span class="jav">"available"</span>,
+  <span class="jk">"specialization"</span>: [
+    <span class="js">"Agentic AI"</span>, <span class="js">"MLOps"</span>,
+    <span class="js">"RAG Systems"</span>, <span class="js">"LLM Fine-tuning"</span>
+  ]
+}
+            </div>
+          </div>
+          <div class="about-btns">
+            <a href="mailto:pulkit12dhingra@gmail.com" class="btn-primary-grad mag-btn">Hire Me</a>
+            <a href="https://www.linkedin.com/in/pulkit-dhingra-4b7312193/" target="_blank" class="btn-ghost mag-btn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Impact Stats ── -->
+  <section id="impact">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal d1">
+          <div class="stat-num"><span class="counter" data-target="100">0</span><span class="stat-suf">M+</span></div>
+          <div class="stat-label">Value Generated ($)</div>
+        </div>
+        <div class="stat-card reveal d2">
+          <div class="stat-num"><span class="counter" data-target="3">0</span><span class="stat-suf">+</span></div>
+          <div class="stat-label">Years Building AI</div>
+        </div>
+        <div class="stat-card reveal d3">
+          <div class="stat-num"><span class="counter" data-target="2">0</span></div>
+          <div class="stat-label">Research Publications</div>
+        </div>
+        <div class="stat-card reveal d4">
+          <div class="stat-num"><span class="counter" data-target="15">0</span><span class="stat-suf">+</span></div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience / Education ── -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">// 02 — Background</span>
+        <h2 class="section-title">Education &amp; Experience</h2>
+      </div>
+      <div class="tab-pills">
+        <button class="tab-pill active" data-tab="exp">Experience</button>
+        <button class="tab-pill" data-tab="edu">Education</button>
+      </div>
+
+      <!-- Experience -->
+      <div class="tab-content active" id="tab-exp">
+        <div class="timeline reveal">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">Jan 2026 — Present · Remote</div>
+            <div class="tl-title-row">
+              <span class="tl-role">AI Engineer</span>
+              <span class="git-hash">a3f2c1d</span>
+            </div>
+            <div class="tl-company">Ford Motor Company</div>
+            <div class="tl-desc">Built agentic AI solutions supporting service advisors by integrating multiple backend systems into a unified agentic platform. Deployed AI assistants using Google ADK and Model Armor on Cloud Run, orchestrated with Kubernetes. Designed MLOps pipelines serving API services and MCP servers, plus AI agent evaluation pipelines with Guardrails for safety and compliance.</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Google ADK</span>
+              <span class="tl-tag">Model Armor</span>
+              <span class="tl-tag">Kubernetes</span>
+              <span class="tl-tag">Cloud Run</span>
+              <span class="tl-tag">MLOps</span>
+              <span class="tl-tag">MCP Servers</span>
+              <span class="tl-tag">Guardrails</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">Jan 2023 — Aug 2024 · Chennai</div>
+            <div class="tl-title-row">
+              <span class="tl-role">Data Scientist</span>
+              <span class="git-hash">b7e9d4a</span>
+              <span class="impact-callout"><i class="fas fa-bolt"></i> $100M value</span>
+            </div>
+            <div class="tl-company">Ford Motor Company</div>
+            <div class="tl-desc">Architected data-driven pipelines for real-time supply chain monitoring. Built agentic AI pipelines to optimize audit processes — reviewing amortization docs, validating contracts, flagging overpayments generating $100M in value. Designed KPI dashboards and implemented model observability with Arize Phoenix.</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">Agentic AI</span>
+              <span class="tl-tag">Qlik Sense</span>
+              <span class="tl-tag">Power BI</span>
+              <span class="tl-tag">dbt</span>
+              <span class="tl-tag">GCP</span>
+              <span class="tl-tag">Arize Phoenix</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">May 2022 — Jan 2023 · Lucknow</div>
+            <div class="tl-title-row">
+              <span class="tl-role">DevOps Engineer</span>
+              <span class="git-hash">c5f1b8e</span>
+            </div>
+            <div class="tl-company">Nagarro</div>
+            <div class="tl-desc">Integrated CI/CD pipelines with Azure, AWS, and GCP. Built Terraform IaC for cloud infrastructure. Implemented Docker and Kubernetes containerization — achieving 35% improvement in scalability — and reduced integration time by 40% via Jenkins pipelines.</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Jenkins</span>
+              <span class="tl-tag">Docker</span>
+              <span class="tl-tag">Kubernetes</span>
+              <span class="tl-tag">Terraform</span>
+              <span class="tl-tag">Grafana</span>
+              <span class="tl-tag">Azure DevOps</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">Jan 2021 — Apr 2021</div>
+            <div class="tl-title-row">
+              <span class="tl-role">Data Science Intern</span>
+              <span class="git-hash">d2a4f7c</span>
+            </div>
+            <div class="tl-company">Responsible AI For Youth Program</div>
+            <div class="tl-desc">Mentored students from government schools in AI and machine learning through India's Responsible AI For Youth initiative. Guided hands-on projects from ideation to implementation.</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">ML</span>
+              <span class="tl-tag">Mentorship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="tab-content" id="tab-edu">
+        <div class="timeline reveal">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">2024 — Nov 2025</div>
+            <div class="tl-title-row"><span class="tl-role">MSc Data Science</span><span class="git-hash">Distinction</span></div>
+            <div class="tl-company">University of Bristol, UK</div>
+            <div class="tl-desc">Awarded Distinction grade. Conducted research on energetic particle measurements from balloon flights and crop plant nutrient estimation using ML and Deep Learning models.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">2018 — 2022</div>
+            <div class="tl-title-row"><span class="tl-role">B.Tech Computer Science</span><span class="git-hash">GPA 7.9</span></div>
+            <div class="tl-company">Dr APJ Abdul Kalam Technical University, India</div>
+            <div class="tl-desc">Maintained GPA 7.9/10. Secured 1st place in annual coding &amp; ML competition building end-to-end software solutions including data pipelines, RESTful APIs, and fine-tuned ML models.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">2017 — 2018</div>
+            <div class="tl-title-row"><span class="tl-role">12th Intermediate — ICSE</span></div>
+            <div class="tl-company">Spring Dale College</div>
+            <div class="tl-desc">Maths, Science and Computers. Scored 70%. Gained foundation in Java, OOP, and scientific principles.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">2015 — 2016</div>
+            <div class="tl-title-row"><span class="tl-role">10th High School — ICSE</span></div>
+            <div class="tl-company">Spring Dale College</div>
+            <div class="tl-desc">Scored 75%.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills" style="background:var(--bg2);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">// 03 — Skills</span>
+        <h2 class="section-title">My Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <div class="skill-category">
+            <div class="skill-cat-label">AI / ML Domains</div>
+            <div class="skill-tags" data-color="tag-cyan">
+              <span class="skill-tag tag-cyan">Agentic AI</span>
+              <span class="skill-tag tag-cyan">LLM Fine-tuning</span>
+              <span class="skill-tag tag-cyan">RAG Systems</span>
+              <span class="skill-tag tag-cyan">MLOps</span>
+              <span class="skill-tag tag-cyan">NLP</span>
+              <span class="skill-tag tag-cyan">Computer Vision</span>
+              <span class="skill-tag tag-cyan">Data Science</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-label">Languages</div>
+            <div class="skill-tags">
+              <span class="skill-tag tag-blue">Python</span>
+              <span class="skill-tag tag-blue">SQL</span>
+              <span class="skill-tag tag-blue">R</span>
+              <span class="skill-tag tag-blue">Java</span>
+              <span class="skill-tag tag-blue">Bash</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-label">Frameworks</div>
+            <div class="skill-tags">
+              <span class="skill-tag tag-purple">LangChain</span>
+              <span class="skill-tag tag-purple">PyTorch</span>
+              <span class="skill-tag tag-purple">HuggingFace</span>
+              <span class="skill-tag tag-purple">FastAPI</span>
+              <span class="skill-tag tag-purple">Google ADK</span>
+              <span class="skill-tag tag-purple">Apache Spark</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-label">Cloud / DevOps</div>
+            <div class="skill-tags">
+              <span class="skill-tag tag-green">GCP</span>
+              <span class="skill-tag tag-green">AWS</span>
+              <span class="skill-tag tag-green">Azure</span>
+              <span class="skill-tag tag-green">Kubernetes</span>
+              <span class="skill-tag tag-green">Docker</span>
+              <span class="skill-tag tag-green">Terraform</span>
+              <span class="skill-tag tag-green">Jenkins</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-cat-label">Data / Viz</div>
+            <div class="skill-tags">
+              <span class="skill-tag tag-amber">dbt</span>
+              <span class="skill-tag tag-amber">Tableau</span>
+              <span class="skill-tag tag-amber">Power BI</span>
+              <span class="skill-tag tag-amber">Qlik Sense</span>
+              <span class="skill-tag tag-amber">Plotly Dash</span>
+              <span class="skill-tag tag-amber">BigQuery</span>
+            </div>
+          </div>
+        </div>
+        <div class="radar-card reveal-right">
+          <canvas id="skillRadar"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">// 04 — Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="agentic">Agentic AI</button>
+        <button class="filter-btn" data-filter="llm">LLM</button>
+        <button class="filter-btn" data-filter="datascience">Data Science</button>
+        <button class="filter-btn" data-filter="engineering">Engineering</button>
+      </div>
+      <div class="bento-grid" id="bento-grid">
+
+        <div class="proj-card span2 reveal" data-cat="agentic llm">
+          <div class="proj-header">
+            <span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span>
+            <span class="proj-path">~/automated-document-parser/</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">Agentic AI · Open Source</div>
+            <div class="proj-title">Automated Document Parser</div>
+            <div class="proj-desc">A powerful open-source document parsing module (live on PyPI) built with LangChain. Automatically detects file types and uses appropriate loaders for PDF, DOCX, CSV, JSON, HTML — ideal for building RAG pipelines. Install via <code style="color:var(--cyan);font-family:'JetBrains Mono',monospace;">pip install automated-document-parser</code>.</div>
+            <div class="proj-badges">
+              <span class="proj-badge">LangChain</span>
+              <span class="proj-badge">Python</span>
+              <span class="proj-badge">RAG</span>
+              <span class="proj-badge">PyPI</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/Pulkit12dhingra/automated-document-parser.git" target="_blank" class="proj-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal d1" data-cat="agentic llm">
+          <div class="proj-header">
+            <span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span>
+            <span class="proj-path">~/query-agent/</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">Agentic AI</div>
+            <div class="proj-title">Query Generation Agent</div>
+            <div class="proj-desc">Automated SQL generation using Qwen-Coder 7B with an AI agent that interprets natural language, generates and executes SQL queries, and delivers accurate results.</div>
+            <div class="proj-badges">
+              <span class="proj-badge">LLM</span>
+              <span class="proj-badge">LangGraph</span>
+              <span class="proj-badge">SQL</span>
+              <span class="proj-badge">Python</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/Pulkit12dhingra/Query_Agent.git" target="_blank" class="proj-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-cat="llm">
+          <div class="proj-header">
+            <span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span>
+            <span class="proj-path">~/hindi-gpt-neo-2.7B/</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">LLM Fine-tuning</div>
+            <div class="proj-title">Hindi GPT-Neo 2.7B</div>
+            <div class="proj-desc">LoRA-fine-tuned GPT-Neo 2.7B on Wikipedia-sourced Hindi data for context-aware Hindi conversations.</div>
+            <div class="proj-badges">
+              <span class="proj-badge">LoRA</span>
+              <span class="proj-badge">Fine-tuning</span>
+              <span class="proj-badge">HuggingFace</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://huggingface.co/DumbsterDrekk/hindi-gpt-neo-2.7B" target="_blank" class="proj-link"><i class="fas fa-robot"></i> HuggingFace</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card span2 reveal d1" data-cat="datascience engineering">
+          <div class="proj-header">
+            <span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span>
+            <span class="proj-path">~/price-trends-ecommerce/</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">Data Science · Engineering</div>
+            <div class="proj-title">Dynamic Price Trends in e-Commerce</div>
+            <div class="proj-desc">Analyzes dynamic pricing trends using Kaggle and eBay datasets. Includes data cleaning, validation, and advanced analysis with Apache Spark for scalable distributed processing.</div>
+            <div class="proj-badges">
+              <span class="proj-badge">Apache Spark</span>
+              <span class="proj-badge">Python</span>
+              <span class="proj-badge">Kaggle</span>
+              <span class="proj-badge">Data Engineering</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/Pulkit12dhingra/Price_Trends_in_e-Commerce.git" target="_blank" class="proj-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-cat="datascience">
+          <div class="proj-header">
+            <span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span>
+            <span class="proj-path">~/uk-demographics-viz/</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">Data Science · Viz</div>
+            <div class="proj-title">UK Demographics Viz</div>
+            <div class="proj-desc">Interactive Tableau dashboard visualizing demographic trends across UK regions.</div>
+            <div class="proj-badges">
+              <span class="proj-badge">Tableau</span>
+              <span class="proj-badge">Data Viz</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://public.tableau.com/app/profile/pulkit.dhingra/viz/UrbanizationintheUK/Dashboard" target="_blank" class="proj-link"><i class="fas fa-chart-bar"></i> Tableau</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal d1" data-cat="engineering">
+          <div class="proj-header">
+            <span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span>
+            <span class="proj-path">~/hitlog-processing/</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">Engineering</div>
+            <div class="proj-title">Hitlog Processing</div>
+            <div class="proj-desc">Python data pipeline that analyzes website hit logs to identify and rank the top 3 most influential articles leading users to registration events.</div>
+            <div class="proj-badges">
+              <span class="proj-badge">Python</span>
+              <span class="proj-badge">Data Pipeline</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/Pulkit12dhingra/Hitlog_Processing.git" target="_blank" class="proj-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Profiles ── -->
+  <section id="profiles" style="background:var(--bg2);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">// 05 — Profiles</span>
+        <h2 class="section-title">My Contributions</h2>
+      </div>
+      <div class="profiles-grid">
+        <a href="https://www.kaggle.com/pulkit12dhingra" target="_blank" class="profile-card pc-kaggle reveal">
+          <i class="fas fa-chart-bar profile-icon" style="color:var(--cyan);"></i>
+          <div class="profile-name">Kaggle</div>
+          <div class="profile-desc">ML Competitions &amp; Datasets</div>
+          <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Qualification</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Projects</a>
-                <a href="#portfolio" class="nav-item nav-link">Profiles</a>
-                <a href="#testimonial" class="nav-item nav-link">Review</a>
-                <a href="#blog" class="nav-item nav-link">Research Papers</a>
-                
-            </div>
-            <a href="mailto: pulkit12dhingra@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                         <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/QmZIi23cT4w?si=SNP3Hgx9AzyW-bfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a href="https://public.tableau.com/profile/pulkit.dhingra#!/" target="_blank" class="profile-card pc-tableau reveal d1">
+          <i class="fas fa-chart-pie profile-icon" style="color:#E07B39;"></i>
+          <div class="profile-name">Tableau Public</div>
+          <div class="profile-desc">Data Visualization Dashboards</div>
+          <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+        </a>
+        <a href="https://www.hackerrank.com/pulkit12dhingra" target="_blank" class="profile-card pc-hrank reveal d2">
+          <i class="fab fa-hackerrank profile-icon" style="color:var(--green);"></i>
+          <div class="profile-name">HackerRank</div>
+          <div class="profile-desc">Python · SQL · Problem Solving</div>
+          <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+        </a>
+        <a href="https://www.credly.com/users/pulkit-dhingra/badges" target="_blank" class="profile-card pc-credly reveal d3">
+          <i class="fas fa-certificate profile-icon" style="color:#EF4444;"></i>
+          <div class="profile-name">Credly</div>
+          <div class="profile-desc">Cloud &amp; AI Certifications</div>
+          <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+        </a>
+        <a href="https://auth.geeksforgeeks.org/user/pulkit12dhingra/articles" target="_blank" class="profile-card pc-gfg reveal d4">
+          <i class="fas fa-code profile-icon" style="color:var(--green);"></i>
+          <div class="profile-name">GeeksforGeeks</div>
+          <div class="profile-desc">15+ Technical Articles</div>
+          <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+        </a>
+        <a href="https://leetcode.com/u/pulkit12dhingra/" target="_blank" class="profile-card pc-leetcode reveal d5">
+          <i class="fas fa-terminal profile-icon" style="color:var(--amber);"></i>
+          <div class="profile-name">LeetCode</div>
+          <div class="profile-desc">Algorithms &amp; Data Structures</div>
+          <i class="fas fa-arrow-up-right-from-square profile-arrow"></i>
+        </a>
+      </div>
     </div>
-    <!-- Video Modal End -->
+  </section>
 
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div id="particles-js"></div>
-        <div class="container" style="position: relative; z-index: 1;">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0" data-aos="fade-right" data-aos-duration="1000">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm profile-glow" src="img/profile_2.jpeg" alt="Pulkit Dhingra - Data Scientist and AI Engineer profile photo" loading="eager">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Pulkit Dhingra</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white hero-mono"></h1>
-                    <div class="typed-text d-none">AI Engineer, Data Scientist, Software Engineer, DevOps Engineer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a target="_blank" href="resume/Pulkit_Resume.pdf" class="btn btn-outline-light mr-5">Download Resume</a>
-                        <a target="_blank" href="https://pulkit12dhingra.github.io/Blog/index.html" class="btn btn-outline-light mr-5">Tech Blogs</a>
-                        
-                        <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/QmZIi23cT4w?si=SNP3Hgx9AzyW-bfI" data-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
-                    </div>
-                </div>
+  <!-- ── Research ── -->
+  <section id="research">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">// 06 — Research</span>
+        <h2 class="section-title">Publications</h2>
+      </div>
+      <div class="research-list">
+        <div class="paper-card reveal">
+          <div>
+            <div class="paper-num">01</div>
+            <div class="paper-year">2021</div>
+          </div>
+          <div>
+            <div class="paper-title">Glass Identification Using Extreme Gradient Boosting Algorithm</div>
+            <div class="paper-journal">IJSRET, Vol. 7, Issue 4 — 2021</div>
+            <div class="paper-abstract">Presents a method for analysing chemical composition of glass particles. Enables classification and separate analysis of glass fragments based on unique chemical composition to identify their source and origin.</div>
+            <div class="paper-tags">
+              <span class="paper-tag">XGBoost</span>
+              <span class="paper-tag">Machine Learning</span>
+              <span class="paper-tag">Classification</span>
             </div>
+          </div>
+          <a href="https://ijsret.com/wp-content/uploads/2021/07/IJSRET_V7_issue4_579.pdf" target="_blank" class="btn-read">Read PDF</a>
         </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+        <div class="paper-card reveal d1">
+          <div>
+            <div class="paper-num">02</div>
+            <div class="paper-year">2022</div>
+          </div>
+          <div>
+            <div class="paper-title">Sketch To Face — Deep Learning Facial Reconstruction</div>
+            <div class="paper-journal">IJSRET, Vol. 8, Issue 4 — 2022</div>
+            <div class="paper-abstract">Introduces a GAN-based method for enhanced visual representation. Users create freehand sketches as input; the GAN model generates coloured facial images — eliminating the need for specialised artists or manual sketching processes.</div>
+            <div class="paper-tags">
+              <span class="paper-tag">GAN</span>
+              <span class="paper-tag">Deep Learning</span>
+              <span class="paper-tag">Computer Vision</span>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0" data-aos="fade-right">
-                    <img class="img-fluid rounded w-100" src="img/profile_4.jpeg" alt="Pulkit Dhingra working at desk with laptop" loading="lazy">
-                </div>
-                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
-                    <h3 class="mb-4">Solving Problems with 0s and 1s</h3>
-                    <p>Versatile technologist with expertise in Python, R and Java, complemented by hands-on experience in Terraform and cloud platforms
-(AWS, GCP, Azure). Skilled in designing and implementing scalable applications, dashboards and end-to-end pipelines, leveraging
-CI/CD, containerization, and automation to streamline development workflows. Proven ability to translate business requirements into
-robust technical solutions, collaborate effectively with cross-functional teams, and mentor peers. Enthusiastic about continuous
-learning, exploring emerging technologies, and fostering a collaborative, high-impact work environment.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Pulkit Dhingra</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Graduation year: <span class="text-secondary">2025</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Masters in Science : Data Science</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">3+ Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+44 7823 725369</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">pulkit12dhingra@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Bristol, United Kingdom</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
-                    </div>
-                    <a href="mailto: pulkit12dhingra@gmail.com" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="https://www.linkedin.com/in/pulkit-dhingra-4b7312193/" class="btn btn-outline-primary">Learn More</a>
-                </div>
-            </div>
+          </div>
+          <a href="https://ijsret.com/wp-content/uploads/2022/07/IJSRET_V8_issue4_461.pdf" target="_blank" class="btn-read">Read PDF</a>
         </div>
+      </div>
     </div>
-    <!-- About End -->
+  </section>
 
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+  <!-- ── Testimonials ── -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <span class="eyebrow" style="display:block;text-align:center;">// 07 — Testimonials</span>
+        <h2 class="section-title" style="text-align:center;">Co-Workers Say</h2>
+      </div>
+      <div class="carousel-wrap reveal">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-slide">
+            <div class="testimonial-card">
+              <span class="quote-mark">"</span>
+              <p class="testimonial-text">Pulkit will be an asset to any organisation related to the best application of ML and AI. I have seen that passion in all of his projects and reports.</p>
+              <div class="testimonial-person">
+                <img src="img/testimonial-1.jpg" alt="Ritika Pandey" loading="lazy">
+                <span class="testimonial-name">Ritika Pandey</span>
+                <a href="https://www.linkedin.com/in/ritika-pandey-1345b1180/" target="_blank" class="testimonial-link">LinkedIn Profile</a>
+              </div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master in Science, Data Science</h5>
-                            <p class="mb-2"><strong>University of Bristol</strong> | <small>2024 - Current</small></p>
-                            <p>Working on enhancing my knowledge in the field of Data Science and AI..</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Bachelor of Technology CSE</h5>
-                            <p class="mb-2"><strong>Dr APJ Abdul Kalam Technical University</strong> | <small>2018 - 2022</small></p>
-                            <p>Explored the vast domain of Computer science, Build an understanding of basic concepts of software development and the complete process of a software development life cycle and other affiliated streams within the domain of computers.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">12th Intermediate</h5>
-                            <p class="mb-2"><strong>Spring Dale College</strong> | <small>2017 - 2018</small></p>
-                            <p>ICSE Board <br>
-                            Maths, Science and Computers domain. Scored 70%. Got understanding for basic principals of Science. Did get an understanding of programming concepts in Java and OOPs concept.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">10th High School</h5>
-                            <p class="mb-2"><strong>Spring Dale College</strong> | <small>2015 - 2016</small></p>
-                            <p>ICSE Board <br> 75%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">AI Engineer</h5>
-                            <p class="mb-2"><strong>Ford Motor Company</strong> | <small>Jan, 2026 - Present</small></p>
-                            <p>Built agentic AI solutions to support service advisors by integrating multiple backend systems into a unified platform. Deployed AI assistants using Google ADK and Model Armor on Cloud Run with Kubernetes orchestration. Designed MLOps pipelines to serve API services and MCP servers, and built AI agent evaluation pipelines with Guardrails for safety and compliance.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Data Scientist</h5>
-                            <p class="mb-2"><strong>Ford Motor Company</strong> | <small>Jan, 2023 - Aug, 2024</small></p>
-                            <p>Collaborated with the Supply Chain Analytics team to architect efficient data-driven pipelines for real-time monitoring of supply chain operations. Built agentic AI pipelines to optimize audit processes generating $100M in value, and designed interactive KPI dashboards using Qlik Sense, Power BI, and Plotly Dash.</p>
-                        </div>          
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">DevOps Engineer</h5>
-                            <p class="mb-2"><strong>Nagarro</strong> | <small>May, 2022 - December, 2022</small></p>
-                            <p>Worked on understanding automation concepts and implementation of DevOps mindset. Build pipelines with Jenkins and Azure DevOps. Integration pipeline with Azure Cloud, AWS Cloud and Google Cloud services. Hands-on with toolkits like sonarqube, artifactory, Prometheus, Ansible, ELK, and Grafana. Understand and implement containerization with Docker and Kubernetes.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Data Science Intern</h5>
-                            <p class="mb-2"><strong>Responsible AI For Youth Program</strong> | <small>Jan, 2021 - Aprl, 2021</small></p>
-                            <p>Volunteer and Intern in the Responsible AI For Youth Program, an initiative by the government of India to introduce students from government schools to AI. Contributed as a mentor for the students and guided them hand in hand in several projects relating to machine learning</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="testimonial-card">
+              <span class="quote-mark">"</span>
+              <p class="testimonial-text">Pulkit is good in Python as well as Machine Learning. He also does competitive programming. He is also good at problem solving and logical things.</p>
+              <div class="testimonial-person">
+                <img src="img/testimonial-2.jpg" alt="Tushar Srivastava" loading="lazy">
+                <span class="testimonial-name">Tushar Srivastava</span>
+                <a href="https://www.linkedin.com/in/tushar-srivastava-327a4b15a/" target="_blank" class="testimonial-link">LinkedIn Profile</a>
+              </div>
             </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="testimonial-card">
+              <span class="quote-mark">"</span>
+              <p class="testimonial-text">Pulkit is the technical Geek. He has good knowledge about Python, AI, and the latest trending technologies. He is very supportive to his teammates.</p>
+              <div class="testimonial-person">
+                <img src="img/testimonial-3.jpg" alt="RadheKrishna Singh" loading="lazy">
+                <span class="testimonial-name">RadheKrishna Singh</span>
+                <a href="https://www.linkedin.com/in/radhekrishna-singh-78323616b/" target="_blank" class="testimonial-link">LinkedIn Profile</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Qualification End -->
-
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PYTHON</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">AI</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">DevOps</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Data Science</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Tableau / Qlik</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">DBT</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prev-btn" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+          <div class="carousel-dots" id="carousel-dots">
+            <div class="cdot active" data-idx="0"></div>
+            <div class="cdot" data-idx="1"></div>
+            <div class="cdot" data-idx="2"></div>
+          </div>
+          <button class="carousel-btn" id="next-btn" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
         </div>
+      </div>
     </div>
-    <!-- Skill End -->
+  </section>
 
-
-    <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">PROJECTS</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Automated-Document-Parser</h4>
-                    </div>
-                    <p>A powerful and automated document parser built with LangChain for intelligent document processing. Automatically detects file types and uses appropriate loaders for PDF, DOCX, CSV, JSON, HTML, and more.</p>
-                    <div class="tech-badges mb-3">
-                        <span class="tech-badge">LangChain</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">RAG</span>
-                    </div>
-                    <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/automated-document-parser.git">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Query-Agent</h4>
-                    </div>
-                    <p>An intelligent SQL query automation system that converts natural language questions into SQL queries using LLM, RAG, and Python. Features CLI interface, comprehensive testing, and modular architecture.</p>
-                    <div class="tech-badges mb-3">
-                        <span class="tech-badge">LLM</span>
-                        <span class="tech-badge">RAG</span>
-                        <span class="tech-badge">SQL</span>
-                        <span class="tech-badge">Python</span>
-                    </div>
-                    <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/Query_Agent.git">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Hindi-GPT-Neo-2.7B</h4>
-                    </div>
-                    <p>Fine Tuning LLM model using LoRA adaptor to understand Hindi language using custome data and encoders</p>
-                    <div class="tech-badges mb-3">
-                        <span class="tech-badge">LoRA</span>
-                        <span class="tech-badge">Fine-tuning</span>
-                        <span class="tech-badge">HuggingFace</span>
-                    </div>
-                    <a class="border-bottom border-primary text-decoration-none" href="https://huggingface.co/DumbsterDrekk/hindi-gpt-neo-2.7B">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="0">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Dynamic Price Trend in e-commerece</h4>
-                    </div>
-                    <p>This project analyzes dynamic pricing trends in e-commerce using datasets from Kaggle and eBay. The analysis includes data cleaning, validation, and advanced analysis using Apache Spark.</p>
-                    <div class="tech-badges mb-3">
-                        <span class="tech-badge">Apache Spark</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Kaggle</span>
-                    </div>
-                    <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/Price_Trends_in_e-Commerce.git">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">UK Demographics Viz</h4>
-                    </div>
-                    <p>Visualization about the demographics in the UK across various regions</p>
-                    <div class="tech-badges mb-3">
-                        <span class="tech-badge">Tableau</span>
-                        <span class="tech-badge">Data Viz</span>
-                    </div>
-                    <a class="border-bottom border-primary text-decoration-none" href="https://public.tableau.com/app/profile/pulkit.dhingra/viz/UrbanizationintheUK/Dashboard">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Hitlog Processing</h4>
-                    </div>
-                    <p>A Python data pipeline that analyzes website hit logs to identify and rank the top 3 most influential articles leading users to registration events.</p>
-                    <div class="tech-badges mb-3">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Data Pipeline</span>
-                    </div>
-                    <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Pulkit12dhingra/Hitlog_Processing.git">Read More</a>
-                </div>
-            </div>
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <h2 class="footer-headline">Let's Build Something</h2>
+      <p class="footer-sub">Open to AI Engineer, Data Science, and MLOps opportunities.</p>
+      <div class="cli-panel">
+        <div class="cli-head">
+          <span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span>
+          <span class="cli-title-text">pulkit@portfolio ~ $</span>
         </div>
-    </div>
-    <!-- Services End -->
-
-
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Profiles</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Contributions</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Machine Learning</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Data Analytics</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Coding</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item first" data-aos="zoom-in" data-aos-delay="0">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Kaggle.jpg" alt="Kaggle profile - Machine Learning competitions and datasets" loading="eager">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://www.kaggle.com/pulkit12dhingra" >
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item second" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/tableau.jpg" alt="Tableau Public profile - Data visualization dashboards" loading="eager">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://public.tableau.com/profile/pulkit.dhingra#!/?newProfile=&activeTab=0">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item third" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Hackerrank.jpg" alt="HackerRank profile - Coding challenges and certifications" loading="eager">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://www.hackerrank.com/pulkit12dhingra" >
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item first" data-aos="zoom-in" data-aos-delay="0">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/acclaim.jpg" alt="Credly badges and professional certifications" loading="eager">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://www.credly.com/users/pulkit-dhingra/badges" >
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item second" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/gfg.jpg" alt="GeeksforGeeks profile - Technical articles and contributions" loading="eager">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://auth.geeksforgeeks.org/user/pulkit12dhingra/articles" >
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 mb-4 portfolio-item third" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/leetcode.png" alt="LeetCode profile - Algorithm and data structure problems" loading="eager">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="https://leetcode.com/u/pulkit12dhingra/">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="cli-body">
+          <div class="cli-row"><span class="cli-prompt">$</span><a href="https://www.linkedin.com/in/pulkit-dhingra-4b7312193/" target="_blank">open linkedin.com/in/pulkit-dhingra</a></div>
+          <div class="cli-row"><span class="cli-prompt">$</span><a href="https://github.com/Pulkit12dhingra" target="_blank">open github.com/Pulkit12dhingra</a></div>
+          <div class="cli-row"><span class="cli-prompt">$</span><a href="https://www.kaggle.com/pulkit12dhingra" target="_blank">open kaggle.com/pulkit12dhingra</a></div>
+          <div class="cli-row"><span class="cli-prompt">$</span><a href="https://pulkit12dhingra.github.io/Blog/index.html" target="_blank">open blog.pulkit12dhingra.dev</a></div>
+          <div class="cli-row"><span class="cli-prompt">$</span><a href="mailto:pulkit12dhingra@gmail.com">mail pulkit12dhingra@gmail.com</a></div>
+          <div class="cli-row"><span class="cli-prompt">$</span><span class="cli-cursor">▌</span></div>
         </div>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Pulkit Dhingra. All Rights Reserved.</p>
     </div>
-    <!-- Portfolio End -->
+  </footer>
 
+  <script>
+  // ── Year ──
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5" id="testimonial">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Co-Workers Say</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Pulkit will be an assert to any organization related to the best application of ML and AI. I have seen that passion in all of his projects and reports.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;" alt="Ritika Pandey testimonial photo" loading="lazy">
-                            <h5 class="font-weight-bold m-0">Ritika Pandey</h5>
-                            <a class="border-bottom border-primary text-decoration-none" href="https://www.linkedin.com/in/ritika-pandey-1345b1180/">Profile</a>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Pulkit is good in Python as well as Machine Learning. He also do competitive programming. He is also good at problem solving and logical things.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;" alt="Tushar Srivastava testimonial photo" loading="lazy">
-                            <h5 class="font-weight-bold m-0">Tushar Srivastava</h5>
-                            <a class="border-bottom border-primary text-decoration-none" href="https://www.linkedin.com/in/tushar-srivastava-327a4b15a/">Profile</a>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Pulkit is the technical Geek. He have good knowledge about the python AI and latest trending technology. He is very supportive to their teammates.</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;" alt="RadheKrishna Singh testimonial photo" loading="lazy">
-                            <h5 class="font-weight-bold m-0">RadheKrishna Singh</h5>
-                            <a class="border-bottom border-primary text-decoration-none" href="https://www.linkedin.com/in/radhekrishna-singh-78323616b/">Profile</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
+  // ── Scroll progress ──
+  window.addEventListener('scroll', () => {
+    const el = document.getElementById('scroll-progress');
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    el.style.width = (window.scrollY / h * 100) + '%';
+  });
 
+  // ── Nav scroll ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
 
-    <!-- Blog Start -->
-    <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Research</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Research Paper</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="Research paper - Glass Identification Using XGBoost Algorithm" loading="lazy">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Glass Identification Using Extreme Gradient Boosting Algorithm</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="https://ijsret.com/wp-content/uploads/2021/07/IJSRET_V7_issue4_579.pdf">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="Research paper - Sketch To Face using Deep Learning" loading="lazy">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">02</h4>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Sketch To Face</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="https://ijsret.com/wp-content/uploads/2022/07/IJSRET_V8_issue4_461.pdf">Read More</a>
-                </div>
-                <!--<div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-            </div> -->
-        </div>
-    </div>
-</div>
-</div>
-    <!-- Blog End -->
+  // ── Mobile nav ──
+  const toggle = document.getElementById('nav-toggle');
+  const drawer = document.getElementById('nav-drawer');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    drawer.classList.toggle('open');
+  });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    toggle.classList.remove('open'); drawer.classList.remove('open');
+  }));
 
+  // ── Active nav link ──
+  const sections = document.querySelectorAll('section[id]');
+  const navAs = document.querySelectorAll('#nav-links a');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { threshold: 0.35 });
+  sections.forEach(s => io.observe(s));
 
-    
+  // ── Scroll reveal ──
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => revealObs.observe(el));
 
+  // ── Neural network canvas ──
+  (function() {
+    const canvas = document.getElementById('neural-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, nodes = [];
+    const N = 70, DIST = 130, SPEED = 0.5, MOUSE_REPEL = 100;
+    let mx = -9999, my = -9999;
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="https://www.kaggle.com/pulkit12dhingra"><i class="fab fa-kaggle"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@ByteSizeBrilliance-AI"><i class="fab fa-youtube"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/pulkit-dhingra-4b7312193/"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://github.com/Pulkit12dhingra"><i class="fab fa-github"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://leetcode.com/u/pulkit12dhingra/"><i class="fas fa-code"></i></a>
-                <a class="btn btn-light btn-social" href="https://pulkit12dhingra.github.io/Blog/index.html"><i class="fas fa-book-open"></i></a>
-            </div>
-            <p class="m-0">&copy; <span id="year"></span> Pulkit Dhingra. All Rights Reserved.</p>
-        </div>
-    </div>
-    <!-- Footer End -->
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = canvas.parentElement.offsetHeight; }
+    window.addEventListener('resize', resize); resize();
 
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+    for (let i = 0; i < N; i++) {
+      nodes.push({ x: Math.random()*W, y: Math.random()*H,
+        vx: (Math.random()-.5)*SPEED, vy: (Math.random()-.5)*SPEED,
+        pulse: 0, r: Math.random()*2+1.5 });
+    }
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    canvas.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    canvas.addEventListener('mouseleave', () => { mx = -9999; my = -9999; });
 
+    function firePulse() {
+      const n = nodes[Math.floor(Math.random()*nodes.length)];
+      n.pulse = 1;
+      nodes.forEach(m => {
+        const d = Math.hypot(n.x-m.x, n.y-m.y);
+        if (d < DIST && m !== n) setTimeout(() => { m.pulse = Math.max(m.pulse, 1 - d/DIST); }, d * 4);
+      });
+    }
+    setInterval(firePulse, 3500 + Math.random()*1500);
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      nodes.forEach(n => {
+        // repel
+        const dx = n.x - mx, dy = n.y - my, d = Math.hypot(dx, dy);
+        if (d < MOUSE_REPEL) { n.vx += dx/d*0.3; n.vy += dy/d*0.3; }
+        // speed cap
+        const sp = Math.hypot(n.vx, n.vy);
+        if (sp > SPEED*2) { n.vx = n.vx/sp*SPEED*2; n.vy = n.vy/sp*SPEED*2; }
+        // move
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < 0) n.x = W; if (n.x > W) n.x = 0;
+        if (n.y < 0) n.y = H; if (n.y > H) n.y = 0;
+        n.pulse = Math.max(0, n.pulse - 0.008);
+      });
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+      // edges
+      for (let i = 0; i < N; i++) for (let j = i+1; j < N; j++) {
+        const d = Math.hypot(nodes[i].x-nodes[j].x, nodes[i].y-nodes[j].y);
+        if (d < DIST) {
+          const alpha = (1 - d/DIST) * 0.15 + (nodes[i].pulse + nodes[j].pulse) * 0.25;
+          ctx.strokeStyle = `rgba(34,211,238,${Math.min(alpha,1)})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(nodes[i].x, nodes[i].y); ctx.lineTo(nodes[j].x, nodes[j].y); ctx.stroke();
+        }
+      }
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+      // nodes
+      nodes.forEach(n => {
+        const a = 0.5 + n.pulse * 0.5;
+        ctx.fillStyle = `rgba(34,211,238,${a})`;
+        if (n.pulse > 0.1) { ctx.shadowBlur = 12; ctx.shadowColor = 'rgba(34,211,238,0.8)'; }
+        ctx.beginPath(); ctx.arc(n.x, n.y, n.r + n.pulse*2, 0, Math.PI*2); ctx.fill();
+        ctx.shadowBlur = 0;
+      });
 
-    <!-- Set current year in footer -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
 
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <!-- AOS - Animate On Scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  // ── Custom typer ──
+  (function() {
+    const phrases = ['>> Agentic AI Engineer', '>> MLOps Architect', '>> LLM Systems Builder', '>> Data Scientist'];
+    const el = document.getElementById('typed-output');
+    let pi = 0, ci = 0, deleting = false;
+    function tick() {
+      const phrase = phrases[pi];
+      if (!deleting) {
+        el.textContent = phrase.slice(0, ci+1);
+        ci++;
+        if (ci === phrase.length) { deleting = true; setTimeout(tick, 1800); return; }
+        setTimeout(tick, 55);
+      } else {
+        el.textContent = phrase.slice(0, ci-1);
+        ci--;
+        if (ci === 0) { deleting = false; pi = (pi+1) % phrases.length; setTimeout(tick, 400); return; }
+        setTimeout(tick, 30);
+      }
+    }
+    tick();
+  })();
 
-    <script>
-        // AOS init
-        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 80 });
+  // ── Tabs ──
+  document.querySelectorAll('.tab-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-pill').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
+  });
 
-        // Particles.js - neural network style
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 55, density: { enable: true, value_area: 900 } },
-                color: { value: '#ffffff' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.25, random: true, anim: { enable: true, speed: 0.8, opacity_min: 0.05, sync: false } },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 140, color: '#ffffff', opacity: 0.15, width: 1 },
-                move: { enable: true, speed: 1.5, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: false }, resize: true },
-                modes: { grab: { distance: 140, line_linked: { opacity: 0.4 } } }
-            },
-            retina_detect: true
+  // ── Counter easeOutExpo ──
+  function easeOutExpo(t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); }
+  function animateCounter(el) {
+    const target = +el.dataset.target, dur = 1800;
+    let start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      const t = Math.min((ts - start) / dur, 1);
+      el.textContent = Math.round(easeOutExpo(t) * target);
+      if (t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  const counterObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); counterObs.unobserve(e.target); } });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
+
+  // ── Skill tag stagger ──
+  const skillTags = document.querySelectorAll('.skill-tag');
+  const skillObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const tags = e.target.querySelectorAll('.skill-tag');
+        tags.forEach((tag, i) => {
+          setTimeout(() => tag.classList.add('in-view'), i * 55);
         });
-    </script>
+        skillObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.skill-category').forEach(el => skillObs.observe(el));
 
+  // ── Radar chart ──
+  new Chart(document.getElementById('skillRadar'), {
+    type: 'radar',
+    data: {
+      labels: ['Python', 'AI / LLM', 'Data Science', 'DevOps', 'Visualisation', 'DBT / SQL'],
+      datasets: [{
+        data: [95, 95, 90, 80, 90, 85],
+        fill: true,
+        backgroundColor: 'rgba(34,211,238,0.1)',
+        borderColor: 'rgba(34,211,238,0.8)',
+        pointBackgroundColor: '#22D3EE',
+        pointBorderColor: '#22D3EE',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: '#22D3EE'
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        r: {
+          min: 60, max: 100,
+          ticks: { display: false, stepSize: 10 },
+          grid: { color: 'rgba(71,85,105,0.4)' },
+          angleLines: { color: 'rgba(71,85,105,0.4)' },
+          pointLabels: { color: '#94A3B8', font: { family: "'JetBrains Mono', monospace", size: 11 } }
+        }
+      }
+    }
+  });
+
+  // ── Project filter ──
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.proj-card').forEach(card => {
+        const cats = card.dataset.cat || '';
+        const show = filter === 'all' || cats.includes(filter);
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+
+  // ── Project card mouse glow ──
+  document.querySelectorAll('.proj-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+    });
+  });
+
+  // ── Magnetic buttons ──
+  document.querySelectorAll('.mag-btn').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      const dx = e.clientX - (r.left + r.width/2);
+      const dy = e.clientY - (r.top  + r.height/2);
+      btn.style.transform = `translate(${dx*.28}px, ${dy*.28}px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+  });
+
+  // ── Carousel ──
+  (function() {
+    const track = document.getElementById('carousel-track');
+    const dots = document.querySelectorAll('.cdot');
+    let cur = 0, total = 3, timer;
+    function go(idx) {
+      cur = (idx + total) % total;
+      track.style.transform = `translateX(-${cur * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === cur));
+    }
+    document.getElementById('prev-btn').addEventListener('click', () => { go(cur - 1); resetTimer(); });
+    document.getElementById('next-btn').addEventListener('click', () => { go(cur + 1); resetTimer(); });
+    dots.forEach(d => d.addEventListener('click', () => { go(+d.dataset.idx); resetTimer(); }));
+    function resetTimer() { clearInterval(timer); timer = setInterval(() => go(cur + 1), 5500); }
+    resetTimer();
+  })();
+  </script>
 </body>
-
 </html>
